@@ -1,0 +1,22 @@
+{
+    "name": "Ankit Mishra",
+    "job_role": "Developer Advocate",
+    "job_description": "Ankit advocates for AI and machine learning products by creating content that promotes them. He engages with developer communities, gathers feedback, and maintains documentation and tutorials.",
+    "action_items": [
+        "Create content to promote AI and machine learning products",
+        "Engage with developer communities to gather feedback",
+        "Create and maintain documentation and tutorials"
+    ],
+    "subordinates": [
+        {
+            "name": "Prakhar Shukla",
+            "job_role": "DSML Problem Setter & Content Reviewer Intern",
+            "job_description": "Prakhar works as a problem setter and content reviewer intern for the DSML team. He helps create and review technical problems and solutions for the DSML platform.",
+            "action_items": [
+                "Assist in creating technical problems for DSML platform",
+                "Review and test solutions for consistency and difficulty",
+                "Provide feedback on problem clarity and relevance"
+            ]
+        }
+    ]
+}

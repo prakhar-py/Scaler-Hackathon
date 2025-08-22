@@ -1,0 +1,119 @@
+{
+    "name": "Abhimanyu Saxena",
+    "job_role": "Co-Founder",
+    "department": "Founder's Office",
+    "job_description": "As a Co-Founder, Abhimanyu oversees the entire organization, provides strategic direction, ensures long-term goals are aligned across departments, and maintains the company\u2019s vision and operational objectives.",
+    "action_items": [
+        "Oversee all company operations",
+        "Define company-wide goals and vision",
+        "Make strategic decisions for company growth"
+    ],
+    "subordinates": [
+        {
+            "name": "Ashish Chitravanshi",
+            "job_role": "VP, Projects",
+            "job_description": "Ashish is responsible for managing cross-functional projects across all departments. He collaborates with department heads to ensure that projects align with company goals and are completed on time.",
+            "action_items": [
+                "Manage cross-functional projects across departments",
+                "Collaborate with department heads to align projects with company goals",
+                "Ensure timely project delivery and report progress"
+            ],
+            "subordinates": [
+                {
+                    "name": "Amitoj Singh Kalsi",
+                    "job_role": "B2B Strategy Analyst",
+                    "job_description": "Amitoj is tasked with analyzing market trends and creating business strategies for enterprise clients. He works closely with sales and marketing teams to implement these strategies.",
+                    "action_items": [
+                        "Analyze market trends and competitor strategies",
+                        "Create business strategies for enterprise clients",
+                        "Collaborate with marketing and sales to implement strategies"
+                    ]
+                },
+                {
+                    "name": "Siddhant Patil",
+                    "job_role": "B2B Content Development Associate",
+                    "job_description": "Siddhant develops content strategies for B2B clients. He writes blog posts, case studies, and whitepapers, working with product and marketing teams to ensure alignment.",
+                    "action_items": [
+                        "Develop content strategies for B2B clients",
+                        "Write blog posts, case studies, and whitepapers",
+                        "Work with product and marketing teams for content alignment"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Naman Bhalla",
+            "job_role": "Associate Director, Product Development",
+            "job_description": "Naman defines the product roadmap and strategies. He works closely with project managers to ensure timely delivery of the product and manages cross-functional teams to ensure product releases are successful.",
+            "action_items": [
+                "Define product roadmap and strategies",
+                "Collaborate with project managers to ensure product delivery",
+                "Manage cross-functional teams for product releases"
+            ],
+            "subordinates": [
+                {
+                    "name": "Aashna Dogra",
+                    "job_role": "AI Engineering Intern",
+                    "job_description": "Aashna assists in building AI models for product features and conducts data cleaning and pre-processing tasks. She collaborates with senior engineers to improve the models.",
+                    "action_items": [
+                        "Assist in building AI models for product features",
+                        "Conduct data cleaning and pre-processing tasks",
+                        "Collaborate with senior engineers for model improvements"
+                    ]
+                },
+                {
+                    "name": "Debashis Maharana",
+                    "job_role": "AI Engineering Intern",
+                    "job_description": "Debashis helps develop and test machine learning models and assists in research and development. He contributes to AI documentation and model reporting.",
+                    "action_items": [
+                        "Develop and test machine learning models",
+                        "Assist with research and development of AI technologies",
+                        "Contribute to AI documentation and model reporting"
+                    ]
+                },
+                {
+                    "name": "Ankit Mishra",
+                    "job_role": "Developer Advocate",
+                    "job_description": "Ankit advocates for AI and machine learning products by creating content that promotes them. He engages with developer communities, gathers feedback, and maintains documentation and tutorials.",
+                    "action_items": [
+                        "Create content to promote AI and machine learning products",
+                        "Engage with developer communities to gather feedback",
+                        "Create and maintain documentation and tutorials"
+                    ],
+                    "subordinates": [
+                        {
+                            "name": "Prakhar Shukla",
+                            "job_role": "DSML Problem Setter & Content Reviewer Intern",
+                            "job_description": "Prakhar works as a problem setter and content reviewer intern for the DSML team. He helps create and review technical problems and solutions for the DSML platform.",
+                            "action_items": [
+                                "Assist in creating technical problems for DSML platform",
+                                "Review and test solutions for consistency and difficulty",
+                                "Provide feedback on problem clarity and relevance"
+                            ]
+                        },
+                        {
+                            "name": "Gautam Sarawagi",
+                            "job_role": "Problem Setter & Content Reviewer Intern",
+                            "job_description": "Gautam works as a content reviewer intern. He helps in developing new coding problems, conducts research, and reviews student-submitted solutions for accuracy.",
+                            "action_items": [
+                                "Help in developing new problems for coding challenges",
+                                "Conduct research on various DSA topics to create content",
+                                "Review solutions submitted by students for errors"
+                            ]
+                        },
+                        {
+                            "name": "Ritika Bera",
+                            "job_role": "Problem Setter & Technical Content Creator Intern",
+                            "job_description": "Ritika assists in the creation of technical problems and content. She works with senior team members to improve educational content and prepares materials for technical workshops.",
+                            "action_items": [
+                                "Create detailed solutions for coding problems",
+                                "Work with senior team members to improve educational content",
+                                "Assist in preparing the material for technical workshops"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,127 @@
+{
+  "name": "Ankit Mishra",
+  "job_role": "Developer Advocate",
+  "job_description": "Ankit advocates for AI and machine learning products by creating content that promotes them. He engages with developer communities, gathers feedback, and maintains documentation and tutorials.",
+  "action_items": [
+    "Create content to promote AI and machine learning products",
+    "Engage with developer communities to gather feedback",
+    "Create and maintain documentation and tutorials",
+    {
+      "task_id": "e2e17ea3-b4a0-413a-bcd7-37c3a73ffffd",
+      "project_name": "DSML Placement Excellence Q3",
+      "task_title": "Phase 1: Content Enhancement",
+      "deadline": "End of Week 4",
+      "status": "Assigned"
+    },
+    {
+      "task_id": "58c09b98-34a8-4a03-9c25-ed8ccaa12210",
+      "project_name": "DSML Placement Excellence Q3",
+      "task_title": "Targeted Outreach to High-Growth Startups and Established Tech Companies",
+      "deadline": "End of Week 8",
+      "status": "Assigned"
+    },
+    {
+      "task_id": "b73ac527-d4a1-4959-8a9f-dda05a2b5683",
+      "project_name": "DSML Placement Excellence Q3",
+      "task_title": "Develop and Implement Learner Engagement Strategies",
+      "deadline": "End of Week 12",
+      "status": "Assigned"
+    },
+    {
+      "task_id": "0e942fa2-0085-4ada-a0ed-75b3d4434931",
+      "project_name": "DSML Placement Excellence Q3",
+      "task_title": "Establish Analytics and Feedback System for DSML Placement",
+      "deadline": "End of Week 16",
+      "status": "Assigned"
+    }
+  ],
+  "subordinates": [
+    {
+      "name": "Prakhar Shukla",
+      "job_role": "DSML Problem Setter & Content Reviewer Intern",
+      "job_description": "Prakhar works as a problem setter and content reviewer intern for the DSML team. He helps create and review technical problems and solutions for the DSML platform.",
+      "action_items": [
+        "Assist in creating technical problems for DSML platform",
+        "Review and test solutions for consistency and difficulty",
+        "Provide feedback on problem clarity and relevance",
+        {
+          "task_id": "e68e3a33-b24e-431a-a7fc-308a05de963c",
+          "project_name": "DSML Placement Excellence Q3",
+          "task_title": "Update Existing DSML Resources",
+          "deadline": "End of Week 1",
+          "status": "Assigned"
+        },
+        {
+          "task_id": "58be02cc-af83-45bf-aba1-f1c96021ac2f",
+          "project_name": "DSML Placement Excellence Q3",
+          "task_title": "Create New DSML Content",
+          "deadline": "End of Week 2",
+          "status": "Assigned"
+        },
+        {
+          "task_id": "0767c6b5-070b-4504-b52d-24a970565dcf",
+          "project_name": "DSML Placement Excellence Q3",
+          "task_title": "Research High-Growth Startups",
+          "deadline": "End of Week 1",
+          "status": "Assigned"
+        },
+        {
+          "task_id": "7010e667-16e7-4584-a0e5-e51fab6faf97",
+          "project_name": "DSML Placement Excellence Q3",
+          "task_title": "Establish Relationships with Hiring Managers",
+          "deadline": "End of Week 2",
+          "status": "Assigned"
+        },
+        {
+          "task_id": "823e7eda-d662-4c87-b106-be5f2a5daa0e",
+          "project_name": "DSML Placement Excellence Q3",
+          "task_title": "Update Interview Preparation Content",
+          "deadline": "End of Week 3",
+          "status": "Assigned"
+        },
+        {
+          "task_id": "d5d9597c-84de-4b2d-a07f-6a0b04c029f3",
+          "project_name": "DSML Placement Excellence Q3",
+          "task_title": "Create Engaging Content for Learners",
+          "deadline": "End of Week 1",
+          "status": "Assigned"
+        },
+        {
+          "task_id": "1b58c486-dda3-4ecc-9bd5-f85223b85d99",
+          "project_name": "DSML Placement Excellence Q3",
+          "task_title": "Set Up Mentorship Programs",
+          "deadline": "End of Week 2",
+          "status": "Assigned"
+        },
+        {
+          "task_id": "094a52be-76b7-495f-ba3e-1ae1b14de9e6",
+          "project_name": "DSML Placement Excellence Q3",
+          "task_title": "Monitor Progress and Evaluate Effectiveness",
+          "deadline": "End of Week 4",
+          "status": "Assigned"
+        },
+        {
+          "task_id": "e614dee8-b438-48b9-ab69-d918a9606d3f",
+          "project_name": "DSML Placement Excellence Q3",
+          "task_title": "Define Placement Rate Metrics",
+          "deadline": "End of Week 1",
+          "status": "Assigned"
+        },
+        {
+          "task_id": "a1fbf490-0c9a-4d5e-9655-651c31218124",
+          "project_name": "DSML Placement Excellence Q3",
+          "task_title": "Design Feedback Collection System",
+          "deadline": "End of Week 2",
+          "status": "Assigned"
+        },
+        {
+          "task_id": "e32ad426-ba71-4112-b75c-3b0e7829bb1d",
+          "project_name": "DSML Placement Excellence Q3",
+          "task_title": "Analyze Learner Outcomes",
+          "deadline": "End of Week 4",
+          "status": "Assigned"
+        }
+      ]
+    }
+  ]
+}

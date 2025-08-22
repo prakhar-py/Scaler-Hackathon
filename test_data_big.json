@@ -1,0 +1,47 @@
+{
+    "name": "Abhimanyu Saxena",
+    "job_role": "Co-Founder",
+    "department": "Founder's Office",
+    "job_description": "As a Co-Founder, Abhimanyu oversees the entire organization, provides strategic direction, ensures long-term goals are aligned across departments, and maintains the company\u2019s vision and operational objectives.",
+    "action_items": [
+        "Oversee all company operations",
+        "Define company-wide goals and vision",
+        "Make strategic decisions for company growth"
+    ],
+    "subordinates": [
+        {
+            "name": "Naman Bhalla",
+            "job_role": "Associate Director, Product Development",
+            "job_description": "Naman defines the product roadmap and strategies. He works closely with project managers to ensure timely delivery of the product and manages cross-functional teams to ensure product releases are successful.",
+            "action_items": [
+                "Define product roadmap and strategies",
+                "Collaborate with project managers to ensure product delivery",
+                "Manage cross-functional teams for product releases"
+            ],
+            "subordinates": [
+                {
+                    "name": "Ankit Mishra",
+                    "job_role": "Developer Advocate",
+                    "job_description": "Ankit advocates for AI and machine learning products by creating content that promotes them. He engages with developer communities, gathers feedback, and maintains documentation and tutorials.",
+                    "action_items": [
+                        "Create content to promote AI and machine learning products",
+                        "Engage with developer communities to gather feedback",
+                        "Create and maintain documentation and tutorials"
+                    ],
+                    "subordinates": [
+                        {
+                            "name": "Prakhar Shukla",
+                            "job_role": "DSML Problem Setter & Content Reviewer Intern",
+                            "job_description": "Prakhar works as a problem setter and content reviewer intern for the DSML team. He helps create and review technical problems and solutions for the DSML platform.",
+                            "action_items": [
+                                "Assist in creating technical problems for DSML platform",
+                                "Review and test solutions for consistency and difficulty",
+                                "Provide feedback on problem clarity and relevance"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
