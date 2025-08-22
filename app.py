@@ -130,7 +130,7 @@ def _assign_task(
         }
         employee["action_items"].append(action_item)
     else:
-        state.logs.append(
+        print(
             f"⚠️ [ERROR] Could not find employee '{assignee_name}' to assign task."
         )
     return task_id
@@ -138,12 +138,12 @@ def _assign_task(
 
 # --- 6. DEFINE THE NODES OF THE LANGGRAPH AGENT ---
 def start_node(state: AgentState) -> AgentState:
-    state.logs.append(f"▶️ [START] Goal Received: '{state.original_goal}'")
+    print(f"▶️ [START] Goal Received: '{state.original_goal}'")
     return state
 
 
 def clarify_goal_node(state: AgentState) -> AgentState:
-    state.logs.append("🤔 [CLARIFY] Agent is formulating clarifying questions...")
+    print("🤔 [CLARIFY] Agent is formulating clarifying questions...")
     prompt = dedent(
         f"""
         You are a Senior Strategist at Scaler. A high-level goal has been proposed: "{state.original_goal}".
@@ -153,23 +153,23 @@ def clarify_goal_node(state: AgentState) -> AgentState:
     )
     chain = llm | clarify_parser
     questions_obj = chain.invoke(prompt)
-    state.logs.append("❓ [CLARIFY] Agent has questions for the user:")
+    print("❓ [CLARIFY] Agent has questions for the user:")
     for q in questions_obj.questions:
-        state.logs.append(f"  - {q}")
+        print(f"  - {q}")
     simulated_answers = (
         "We want to increase DSML placements by 20% in the next quarter. "
         "Focus on improving the quality and relevance of our interview preparation content. "
         "We should target high-growth startups and established tech companies."
     )
     state.clarified_goal = f"Original Goal: {state.original_goal}. User Clarifications: {simulated_answers}"
-    state.logs.append(
+    print(
         f"✅ [CLARIFY] Goal clarified: Increase DSML placements by 20% next quarter by improving interview content quality."
     )
     return state
 
 
 def create_plan_node(state: AgentState) -> AgentState:
-    state.logs.append("📝 [PLAN] Creating a high-level, phased strategic plan...")
+    print("📝 [PLAN] Creating a high-level, phased strategic plan...")
     prompt = dedent(
         f"""
         You are the VP of Projects at Scaler. Create a strategic roadmap for the initiative: "{state.clarified_goal}".
@@ -179,9 +179,9 @@ def create_plan_node(state: AgentState) -> AgentState:
     )
     chain = llm | plan_parser
     plan_obj = chain.invoke(prompt)
-    state.logs.append("📋 [PLAN] High-level plan created:")
+    print("📋 [PLAN] High-level plan created:")
     for i, (phase, desc) in enumerate(plan_obj.plan.items()):
-        state.logs.append(f"  Phase {i+1}: {phase} - {desc}")
+        print(f"  Phase {i+1}: {phase} - {desc}")
         state.task_queue.append(
             {
                 "task_description": f"{phase}: {desc}",
@@ -201,7 +201,7 @@ def process_task_node(state: AgentState) -> AgentState:
     task_level = task_info["level"]
     indent = "  " * task_level
 
-    state.logs.append(f"{indent}🔄 [ASSIGN] Processing task: '{task_description}'")
+    print(f"{indent}🔄 [ASSIGN] Processing task: '{task_description}'")
 
     def get_hierarchy_summary(node, level=0):
         summary = "  " * level + f"- {node['name']} ({node['job_role']})\n"
@@ -237,13 +237,13 @@ def process_task_node(state: AgentState) -> AgentState:
     task_details = assignment_obj.dict()
 
     parent_task_id = _assign_task(state, task_details)
-    state.logs.append(
+    print(
         f"{indent}✅ [ASSIGN] Task '{task_details['task_title']}' ASSIGNED to -> {task_details['assignee_name']}"
     )
 
     assignee = find_employee(task_details["assignee_name"], state.hierarchy_data)
     if assignee and assignee.get("subordinates"):
-        state.logs.append(
+        print(
             f"{indent}↪️ [SUB-TASK] {assignee['name']} is a manager. Breaking down their task for the team..."
         )
         subordinates_summary = "\n".join(
@@ -283,7 +283,7 @@ def process_task_node(state: AgentState) -> AgentState:
         for sub_task in subtask_obj.sub_tasks:
             sub_task_dict = sub_task.dict()
             _assign_task(state, sub_task_dict, parent_task_id=parent_task_id)
-            state.logs.append(
+            print(
                 f"{indent}  ✅ [SUB-TASK ASSIGNED] '{sub_task_dict['task_title']}' -> {sub_task_dict['assignee_name']}"
             )
 
