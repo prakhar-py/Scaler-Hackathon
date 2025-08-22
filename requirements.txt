@@ -3,3 +3,4 @@ langgraph
 pydantic
 langchain-google-genai 
 python_dotenv
+flask
