@@ -5,3 +5,6 @@ langchain-google-genai
 python_dotenv
 flask
 gunicorn
+langchain_groq
+
+
